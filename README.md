@@ -1,4 +1,4 @@
-# HGNN4SRM-jd
+# HGNN4SRM
 Title: Heterogeneous Network Embedding for Deep Semantic Relevance Match in E-commerce Search
 Model:HGNN4SRM
 
