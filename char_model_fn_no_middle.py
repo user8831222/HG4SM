@@ -65,7 +65,7 @@ def sparse_tensor_to_dense(sparse_tensor, width, sparse_values, default = 0):
                     )
 
 
-def format_features(features):  ## 使用q_t_neib_sparse标记[query, title, neighbor1, neighbor2, ..., neighbor8]
+def format_features(features): 
     q_t_neib_sparse = [features['q'], features['sna'], features['qiq1_t'], features['qiq1_q'], features['qiq2_t'], features['qiq2_q'], features['iqi1_q'], features['iqi1_t'], features['iqi2_q'], features['iqi2_t']]
     ## word -> id (sparse -> val -> ids -> sparse)
     feature_name_unpad = ['q_unpad', 'sna_unpad', 'qiq1_t_unpad', 'qiq1_q_unpad', 'qiq2_t_unpad', 'qiq2_q_unpad', 'iqi1_q_unpad', 'iqi1_t_unpad', 'iqi2_q_unpad', 'iqi2_t_unpad']
